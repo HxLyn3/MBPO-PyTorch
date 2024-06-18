@@ -33,10 +33,6 @@ def get_args():
     # InvertedPendulum: -0.05, Hopper, Swimmer: -1, Walker2d, HalfCheetah: -3, Ant: -4, Humanoid: -8
     parser.add_argument("--target-entropy", type=int, default=-8)                       # target entropy
 
-    # predictive control parameters
-    # InvertedPendulum, Hopper, Swimmer: 3, Walker2d, Ant, Humanoid: 2
-    parser.add_argument("--plan-length", type=int, default=2)
-
     # replay-buffer parameters
     parser.add_argument("--buffer-size", type=int, default=int(1e6))
 
